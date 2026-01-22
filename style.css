@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ebecf0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #172b4d;
+}
+
+button {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background: #5aac44;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #519839;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.column {
+  width: 280px;
+  background: #ebecf0;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 350px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.column h3 {
+  text-align: center;
+  color: #172b4d;
+  font-weight: 600;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: grab;
+  box-shadow: 0 1px 0 rgba(9,30,66,.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card.dragging {
+  opacity: 0.5;
+  transform: scale(1.05) rotate(2deg);
+}
+
+.trash {
+  width: 160px;
+  height: 160px;
+  background: #c02121;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 160px;
+  font-size: 20px;
+  position: sticky;
+  top: 20px;
+  margin-left: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background 0.2s;
+}
+
+.trash:hover {
+  background: #aa1919;
+}
