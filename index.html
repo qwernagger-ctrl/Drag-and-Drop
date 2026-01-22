@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Realistic Trello Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📝 Trello Clone</h1>
+
+<button id="addCardBtn">➕ Добавить карточку</button>
+
+<div class="board">
+  <div class="column" data-column="todo">
+    <h3>To Do</h3>
+  </div>
+
+  <div class="column" data-column="progress">
+    <h3>In Progress</h3>
+  </div>
+
+  <div class="column" data-column="done">
+    <h3>Done</h3>
+  </div>
+
+  <div class="trash" id="trash">🗑 Корзина</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
